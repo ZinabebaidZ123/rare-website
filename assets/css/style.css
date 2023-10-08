@@ -1,0 +1,844 @@
+
+
+button{
+    border:none;
+    outline: line;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Inter&family=Montserrat:wght@600&family=Raleway:wght@500&family=Readex+Pro&family=Tajawal:wght@700&display=swap');
+
+:root{
+    --main-color: #2E5343;
+    --sec-color:  #EEDDD5;
+    --alt-sec-color: #AA968C;
+
+}
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+h1{
+    font-size: 5rem;
+    font-weight:400;
+    line-height: 1.5;
+    padding: 0;
+    color:var(--sec-color);
+}
+h2{
+    font-size: 4rem;
+    font-weight:900;
+    line-height: 1.6;
+    color:var(--main-color);
+   
+  
+}
+p{
+    
+    font-size: 1rem;
+    font-weight: 400;
+}
+a{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+a:hover{
+    color: var(--text-color) !important;
+
+}
+section{
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+ .container-fluid{
+    padding: 0 4rem;
+    max-width: none !important;
+}
+
+
+@media(max-width:300px) {
+    html {
+        font-size: 11px
+    }
+}
+
+@media(max-width:567px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media(min-width:992px) {
+    html {
+        font-size: 16px
+    }
+}
+
+
+/* start spinner -------------------------------------- */
+#loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.spinner {
+    width: 4rem;
+    height: 4rem;
+    border: 5px solid #fff;
+    border-top: 5px solid var(--main-color);
+    border-radius: 50%;
+    animation: 1s linear infinite spin
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/*start  navbar style ------------------------------------ */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+ .button {
+    position: relative;
+    /* background-color: aqua; */
+}
+.navbar a{
+    font-size: 1.5rem !important ;
+    font-weight: 400 !important;
+    color: #fff !important;
+}
+.navbar .navbar-toggler-icon{
+    color: #fff;
+    font-size: 2rem;
+}
+/* Add your custom styles here */
+#navbar {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #navbar.green-bg {
+    background-color: var(--main-color) !important;
+  }
+ /* button{
+    margin: 0.25rem;
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+} */
+ .right-angle ,  .left-angle{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+        z-index: 0;
+}
+.right-angle{
+  top: 0;
+  right:0;
+  border-top:1px solid  var(--sec-color);
+  border-right:1px solid  var(--sec-color);
+}
+.left-angle{
+    bottom: 0;
+    left:0;
+    border-bottom:1px solid var(--sec-color);
+    border-left:1px solid var(--sec-color);
+  }
+/* start banner-section ------------------------------------ */
+.banner{
+    background-color: var(--main-color);
+   padding-bottom: 7rem;
+    position: relative;
+    height: 105vh;
+   
+}
+
+.banner .banner-container{
+    position: relative !important;
+    /* padding:0;  */
+    top: 0 !important;
+}
+.banner .butn img{
+   width:30%;
+}
+.banner .banner-content{
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+    width: 49%;
+    height: 100%;
+    position: relative;
+    /* padding-bottom: 7rem; */
+    /* background-color: aqua; */
+    /* margin-top: 7rem; */
+}
+.banner .txt{
+    position: relative;
+    display: inline-block;
+    padding-left: 2.5rem;
+}
+.banner .txt img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.buton img{
+    width: 40%;
+}
+.banner .banner-content .arrow-img{
+   position: absolute;
+   right: 1rem;
+   bottom: 3rem;
+}
+.banner .img-group{
+    position: absolute;
+    bottom: -11rem;
+    left: 0;
+    /* background-color: aqua; */
+    width: 62% !important;
+    display: flex;
+    justify-content: end;
+}
+
+.banner .img-group img{
+    width: 27% !important;
+}
+.banner .banner-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    width: 25%;
+    padding-bottom: 3rem;
+}
+.banner .banner-img img{
+    width: 100%;
+    margin-bottom: 3rem;
+
+}
+.banner .star{
+    position: absolute;
+    bottom: -2.5rem;
+    right: 0;
+   
+}
+.banner .star img{
+    width:5rem;
+}
+/* .banner .white-space{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #895348;
+} */
+@media(max-width:992px){
+    .banner{
+        padding: 0 1.5rem;
+        height: 80vh;
+    }
+    .banner .banner-img{
+       width: 55% ;
+    }
+    .banner .banner-content .arrow-img{
+        position: absolute;
+        right: 2.5rem;
+        top: 67%;
+     }
+    .banner h1{
+        font-size: 2.8rem;
+    }
+    .banner .txt{
+        padding: 0;
+    }
+    .banner .txt img{
+        display: none;
+    }
+    .banner .img-group{
+        left:2rem;
+        width: 45%;
+        /* background-color: #AA968C; */
+    }
+    .banner .img-group img{
+        width: 55% !important;
+    }
+    .banner .butn img{
+        width: 75% ;
+    }
+    
+}
+
+/* start about-us-section  ---------------- */
+.about-us{
+    position: relative;
+    margin-top: 5rem;
+}
+.about-us .about-txt{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* media query for about-us-section ------------------------ */
+@media(max-width:992px){
+    .about-us .row .col-lg-4{
+    justify-content: center !important;
+    padding:0 2rem ;
+   }
+   .about-us .container-fluid{
+    padding:0 1.5rem ;
+   }
+   .about-us .about-txt{
+    display: none;
+   }
+   .about-us .mob-txt{
+    display: block !important;
+    text-align: center;
+    margin-top: 2rem;
+   }
+   .about-us .mob-txt img{
+    width: 80%;
+   }
+}
+
+/* start our-services section ---------------------------------- */
+.our-services {
+    position: relative;
+    padding-bottom: 5rem;
+}
+.our-services .serv-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 35%; */
+}
+
+.our-services .service-content {
+   padding-left: 5.25rem;
+   padding-top: 5.25rem;
+}
+
+.our-services li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+.our-services ul i {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+/* media query for services-section ------------------------- */
+@media(max-width:992px){
+    .our-services ul{
+        width: 75% !important;
+    }
+    .our-services .row{
+        margin-top: 26rem;
+    }
+    .our-services .container-fluid{
+        padding-left: 1rem ;
+    }
+    .our-services .service-content {
+        padding-left: 0;
+        padding-top: 1rem;
+     }
+    .our-services .serv-img{
+        width: 80%;
+    }
+    .our-services .serv-img img{
+        width: 100%;
+    }
+}
+/* -----------our-services---------------------- */
+
+.services {
+    color: #2e5343;
+    font: 900 4rem "Raleway", sans-serif;
+    position: relative;
+  }
+  /* head-service */
+  .head-service {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .haircuts {
+    color: #000000;
+    text-align: center;
+    font: 700 1.5rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .makeup {
+    color: #000000;
+    text-align: left;
+    font: 700 1.5rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .face-care {
+    color: #000000;
+    text-align: left;
+    font: 700 1.5rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .massage {
+    color: #000000;
+    text-align: left;
+    font: 700 1.5rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .body-clean {
+    color: #000000;
+    text-align: left;
+    font: 700 1.5rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+   /* icons */
+  
+  
+   .icon-services {
+     display: flex;
+     flex-direction: column;
+     gap: 3.625rem;
+     align-items: center;
+     justify-content: flex-start;
+     position: relative;
+     overflow: visible;
+   }
+   /* content-service */
+  
+   .content-service{
+    margin-top: 5%;
+  }
+  
+  /* text-service */
+  
+  .text-service{
+    text-align: left;
+    font: 300 1rem "Inter", sans-serif;
+    position: relative;
+    width: 25rem;
+    
+  }
+  
+  /* button-service  style*/
+  
+  .button-service {
+    width: 9.25rem;
+    height: 3.438rem;
+    position: relative;
+  }
+  .button-icon {
+    background: #2e5343;
+    width: 8.75rem;
+    height:2.813rem;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.313rem;
+  }
+  .icon-class {
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    overflow: visible;
+  }
+  .book-now {
+    color: #eeddd5;
+    text-align: center;
+    font: 700 1rem "Raleway", sans-serif;
+    position: absolute;
+    left: 2.25rem;
+    top: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* start 0ur-products-section  -------------------------------- */
+/* -------------our-product style---------- */
+
+.button-shape {
+    width: 9.25rem;
+    height: 3.438rem;
+    position: relative;
+  }
+  .button-icon {
+    background: #895348;
+    width: 8.75rem;
+    height: 2.813rem;
+    position: absolute;
+    left:0.25rem;
+    top: 0.313rem;
+  }
+  .icon-shape {
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    overflow: visible;
+  }
+  .book-now {
+    color: #eeddd5;
+    text-align: center;
+    font: 700 1rem "Raleway", sans-serif;
+    position: absolute;
+    left: 2.563rem;
+    top: 1.125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bathrobe {
+    color: #000000;
+    text-align: left;
+    font: 300 3rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  ._360-r-s {
+    color: #000000;
+    text-align: left;
+    font: 700 1.5rem "Raleway", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .head-product , .head-work{
+      color: #2e5343;
+      text-align: center;
+      font: 900 4rem "Raleway", sans-serif;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   
+    }
+      .our-product img {
+       width: 85% !important;
+    }
+    /* media query for our products section --------------------- */
+  @media(max-width:992px){
+    .our-product{
+        padding:0 4rem;
+    }
+    .our-product h2{
+        font-size: 2.5rem;
+    }
+    .sec-row .col-lg-4{
+        order:2;
+    }
+
+    .sec-row .col-lg-5{
+        order:3;
+    }
+    .our-product .row{
+        margin-bottom: 4rem;
+    }
+    .our-product .col-lg-5{
+        margin-top: 1.5rem;
+    }
+  }
+.navbar button{
+    border: none !important;
+}
+  /* start oour-work-section ----------------------------- */
+  .our-work{
+    padding-bottom: 17rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .our-work .first-img , .our-work .third-img {
+    position: relative;
+    top:17rem;
+  }
+  /* media query for our-work -------------- */
+  @media(max-width:992px){
+    .our-work{
+        padding-bottom: 0;
+    }
+    .our-work .col-lg-3{
+        margin-bottom: 3rem;
+    }
+    .our-work .first-img{
+        order:5;
+    }
+    .our-work .sec-img{
+        order:4;
+    }
+    .our-work .third-img{
+        order:3;
+    }
+    .our-work .fourth-img{
+        order:2;
+    }
+    .our-work .first-img , .our-work .third-img {
+        position: relative;
+        top:0;
+      }
+  }
+/* start contact-us-section ---------------------------------- */
+.contact-us .contact-container{
+    background-color: var(--main-color);
+    padding: 0;
+    position: relative;
+    height: 72vh;
+}
+.contact-us .transperent-div{
+    width: 100%;
+    background-color: #fff;
+    height: 3rem;
+}
+.contact-us .contact-img{
+    width: 30%;
+  
+}
+.contact-us .contact-img img{
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+.contact-us .contact-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+}
+.contact-us .contact-content .txt{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+.contact-us .contact-content .txt img{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    z-index: 0;
+
+} 
+.contact-us .contact-content p{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color:#fff;
+    display: inline-block;
+    
+}
+.contact-us .contact-content button{
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    border: none;
+    outline: none;
+}
+.contact-us .contact-content img{
+    width: 5.25rem;
+}
+@media(max-width:992px){
+    .contact-us{
+        padding: 0 1rem;
+    }
+    .contact-us .contact-container{
+        height: 38vh;
+    }
+    .contact-us .transperent-div{
+        display: none;
+    }
+    .contact-us .contact-img img{
+        width: 46%;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+    }
+    /* .contact-us .contact-content img{
+        width: 3rem;
+    } */
+    .contact-us .contact-content .txt{
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .contact-us .contact-content p{
+        font-size: 1.25rem;
+        font-weight: 900;
+        color:#fff;
+        display: inline-block;
+        
+    }
+    .contact-us .contact-content{
+        width: 55%;
+        height: 47vh;
+    
+}
+.contact-us .contact-content a img{
+    width: 40%;
+    margin-left: 1rem;
+}
+.contact-us .contact-content{
+    height:40vh ;
+}
+.contact-us .contact-content .txt img{
+    bottom: 0;
+    width: 4rem;
+}
+}
+
+
+/* start contact-info-section --------------------------------- */
+.contact-info .contact-info-content button{
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    padding: 0.5rem 2rem;
+}
+.contact-info .contact-info-content ul{
+    margin-top: 3rem;
+}
+.contact-info .contact-info-content li{
+    line-height: 1.8;
+    color: #000;
+}
+.contact-info .contact-info-content li a{
+    color: #000;
+}
+.contact-info-img{
+    position: relative;
+}
+
+.contact-info-img .map-img{
+    width: 90% !important;
+    position: absolute;
+    /* top: 12%;
+    bottom: 12%; */
+    /* bottom: 13%; */
+    left:5%;
+}
+
+
+/* media query for contact-info section -------------------------- */
+@media(max-width:992px){
+    .contact-info .content{
+        order: 3;
+    }
+    .contact-info .img{
+        order: 2;
+    }
+}
+
+/* start footer section ----------------------------- */
+footer{
+    background-color: var(--main-color);
+    position: relative;
+}
+footer .star{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.frame{
+    border: 2px solid var(--alt-sec-color);
+}
+footer .row{
+    padding: 6rem 0;
+}
+footer li{
+    line-height: 1.5;
+}
+footer li a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.25rem;
+    transition: 1s all;
+}
+footer li a:hover{
+    color: var(--main-color);
+}
+footer p{
+    color: #fff;
+}
+/* media query for footer ---------------------------- */
+@media(max-width:992px){
+
+    footer .row{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+    footer .col-lg-4{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    
+    }
+    footer ul{
+        padding: 0;
+        margin-top: 1.25rem ;
+    }
+    footer .footer-bottom{
+        padding-bottom: 3rem;
+    }
+    footer .star img {
+     width: 7rem;
+    }
+}
